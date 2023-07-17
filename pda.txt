@@ -1,0 +1,42 @@
+#
+#
+#
+
+Sigma:
+0
+1
+End
+
+#
+#
+#
+
+States:
+q1,S
+q2
+q3 
+q4,F
+End
+
+#
+#
+#
+
+Stack Alphabet:
+0
+$
+End
+
+#
+#
+#
+Transitions:
+q1, epsilon,epsilon -> $, q2
+q2, 0,epsilon -> 0 , q2
+q2, 1,0 -> epsilon , q3
+q3, 1,0 -> epsilon , q3
+q3, epsilon,$ -> epsilon , q4
+End
+#
+#
+#
